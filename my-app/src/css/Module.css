@@ -1,0 +1,16 @@
+.module {
+    display: flex;
+    align-items: center;
+    /* Rest of the styling */
+  }
+  
+  .module-icon {
+    width: 30px;
+    height: 30px;
+    /* Rest of the styling */
+  }
+  
+  .module-name {
+    /* Styling for the module name */
+  }
+  
