@@ -1,0 +1,116 @@
+[
+    {
+        "statName": "shieldStrength",
+        "minValue": 0,
+        "maxValue": 150,
+        "defaultValue": 0
+    },
+    {
+        "statName": "energyConsumption",
+        "minValue": 0,
+        "maxValue": 30,
+        "defaultValue": 0
+    },
+    {
+        "statName": "speedIncrease",
+        "minValue": 0,
+        "maxValue": 40,
+        "defaultValue": 0
+    },
+    {
+        "statName": "fuelEfficiency",
+        "minValue": 0,
+        "maxValue": 25,
+        "defaultValue": 0
+    },
+    {
+        "statName": "damageIncrease",
+        "minValue": 0,
+        "maxValue": 30,
+        "defaultValue": 0
+    },
+    {
+        "statName": "reloadSpeed",
+        "minValue": 0,
+        "maxValue": 3.0,
+        "defaultValue": 0
+    },
+    {
+        "statName": "additionalCapacity",
+        "minValue": 0,
+        "maxValue": 120,
+        "defaultValue": 0
+    },
+    {
+        "statName": "cargoSecurity",
+        "minValue": 0,
+        "maxValue": 25,
+        "defaultValue": 0
+    },
+    {
+        "statName": "scanRange",
+        "minValue": 0,
+        "maxValue": 300,
+        "defaultValue": 0
+    },
+    {
+        "statName": "scanAccuracy",
+        "minValue": 0,
+        "maxValue": 100,
+        "defaultValue": 0
+    },
+    {
+        "statName": "hullStrength",
+        "minValue": 0,
+        "maxValue": 180,
+        "defaultValue": 0
+    },
+    {
+        "statName": "impactResistance",
+        "minValue": 0,
+        "maxValue": 50,
+        "defaultValue": 0
+    },
+    {
+        "statName": "energyOutput",
+        "minValue": 0,
+        "maxValue": 130,
+        "defaultValue": 0
+    },
+    {
+        "statName": "overheatLimit",
+        "minValue": 50,
+        "maxValue": 100,
+        "defaultValue": 50
+    },
+    {
+        "statName": "stealthDuration",
+        "minValue": 0,
+        "maxValue": 90,
+        "defaultValue": 0
+    },
+    {
+        "statName": "cooldown",
+        "minValue": 0,
+        "maxValue": 200,
+        "defaultValue": 0
+    },
+    {
+        "statName": "repairRate",
+        "minValue": 0,
+        "maxValue": 10,
+        "defaultValue": 0
+    },
+    {
+        "statName": "oxygenEfficiency",
+        "minValue": 10,
+        "maxValue": 120,
+        "defaultValue": 10
+    },
+    {
+        "statName": "systemRedundancy",
+        "minValue": 0,
+        "maxValue": 4,
+        "defaultValue": 0
+    }
+]
