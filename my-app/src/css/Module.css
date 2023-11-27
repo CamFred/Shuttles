@@ -36,8 +36,21 @@
     border-radius: 5px;
     background-size: cover;
   }
+
+  .module-icon-tier1 {
+    filter: sepia(100) saturate(10) hue-rotate(90deg);
+}
+
+.module-icon-tier2 {
+    filter: sepia(100) saturate(10) hue-rotate(180deg);
+}
+
+.module-icon-tier3 {
+    filter: sepia(100) saturate(10) hue-rotate(270deg);
+}
   
   .module-name {
-    /* Styling for the module name */
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px; /* Adjust this value as needed */
   }
   

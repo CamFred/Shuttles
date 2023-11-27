@@ -1,0 +1,53 @@
+.draggable-window {
+    position: absolute;
+    background-color: #000;
+    border: 3px solid #00bfff;
+    color: #00bfff;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    box-shadow: 0 0 15px #00bfff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0px;
+    border-radius: 0px;
+    max-height: 500px;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #00bfff transparent;
+}
+
+.draggable-window-content {
+    width: 320px;
+    max-height: 200px;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #00bfff transparent;
+}
+
+.draggable-window-content::-webkit-scrollbar {
+    width: 12px;
+}
+
+.draggable-window-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.draggable-window-content::-webkit-scrollbar-thumb {
+    background-color: #00bfff;
+    border-radius: 3px;
+}
+
+.draggable-window-title {
+    cursor: move;
+    width: 320px;
+    height: 10px;
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    font-family: 'Press Start 2P', cursive;
+    border-bottom: 1px solid #fff;
+    font-size: 0.6em;
+    border-radius: 0px;
+}

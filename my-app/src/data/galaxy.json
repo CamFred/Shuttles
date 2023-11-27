@@ -1,0 +1,90 @@
+{
+    "starSystems": [
+      {
+        "id": "system001",
+        "name": "Nebulon Prime",
+        "coordinates": {"x": 105000, "y": 88000, "z": 45000},
+        "nearestStars": [
+          {"id": "system002", "distance": 85},
+          {"id": "system003", "distance": 130}
+        ],
+        "celestialDestinations": [
+          {
+            "id": "planet001",
+            "type": "planet",
+            "name": "Zephyria",
+            "description": "A planet with vast oceans and floating cities.",
+            "resources": ["hydronium", "exotic fish"],
+            "dangers": ["intense storms", "pirates"],
+            "facilities": ["aquatic research station", "trade harbor"]
+          },
+          {
+            "id": "asteroidBelt001",
+            "type": "asteroid belt",
+            "name": "Rogue's Veil",
+            "description": "A dense asteroid belt rich in rare minerals.",
+            "resources": ["asteroid ore", "quantum crystals"],
+            "dangers": ["rogue asteroids", "smugglers"],
+            "facilities": ["mining outpost", "secret base"]
+          }
+        ]
+      },
+      {
+        "id": "system002",
+        "name": "Vortexia",
+        "coordinates": {"x": 98000, "y": 104000, "z": 51000},
+        "nearestStars": [
+          {"id": "system001", "distance": 85},
+          {"id": "system003", "distance": 95}
+        ],
+        "celestialDestinations": [
+          {
+            "id": "planet002",
+            "type": "planet",
+            "name": "Shadowmere",
+            "description": "A dark, enigmatic planet with a permanent twilight.",
+            "resources": ["dark matter", "mysterious artifacts"],
+            "dangers": ["unknown"],
+            "facilities": ["abandoned outpost", "ancient ruins"]
+          },
+          {
+            "id": "spaceStation001",
+            "type": "space station",
+            "name": "Vortexia Haven",
+            "description": "A bustling interstellar trade hub at the edge of the vortex.",
+            "services": ["trade market", "ship repair", "information broker"]
+          }
+        ]
+      },
+      {
+        "id": "system003",
+        "name": "Solara",
+        "coordinates": {"x": 111000, "y": 97000, "z": 46000},
+        "nearestStars": [
+          {"id": "system001", "distance": 130},
+          {"id": "system002", "distance": 95}
+        ],
+        "celestialDestinations": [
+          {
+            "id": "planet003",
+            "type": "planet",
+            "name": "Luminara",
+            "description": "A bright, sun-kissed planet with golden sands and clear skies.",
+            "resources": ["solar energy", "precious metals"],
+            "dangers": ["solar flares", "high radiation"],
+            "facilities": ["solar farm", "observatory"]
+          },
+          {
+            "id": "comet001",
+            "type": "comet",
+            "name": "Starwhisper",
+            "description": "A comet emitting a mysterious, luminous aura.",
+            "resources": ["frozen gases", "cosmic dust"],
+            "dangers": ["unstable trajectory", "cold hazards"],
+            "facilities": ["research station"]
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -19,15 +19,15 @@ const Layout = ({ children }) => {
   };
 
   const mainContentStyle = {
-    backgroundColor: backgroundColor,
-    backgroundImage: `url(${littleBg})`,
-    backgroundRepeat: 'repeat',
+    //backgroundColor: backgroundColor,
+    //backgroundImage: `url(${littleBg})`,
+    //backgroundRepeat: 'repeat',
     color: textColor,
     width: '100%',
     maxWidth: '1200px',
     margin: '0 auto',
-    border: `3px solid ${borderColor}`,
-    boxShadow: `0 0 15px ${boxShadowColor}`,
+    //border: `3px solid ${borderColor}`,
+    //boxShadow: `0 0 15px ${boxShadowColor}`,
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'space-around',
@@ -37,12 +37,11 @@ const Layout = ({ children }) => {
   return (
     <div style={layoutStyle}>
         <div style={mainContentStyle}>
-        <Header />
-
-      <main>{children}</main>
-      <Footer />
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </div>
       </div>
-    </div>
   );
 };
 
