@@ -1,14 +1,40 @@
+:root {
+  --text-color: #00bfff;
+  --header-color: #000000;
+  --background-dark: #000;
+  --border-glow: #00bfff;
+  --module-border: 2px solid #fff;
+  --scrollbar-thumb: #00bfff;
+  --scrollbar-track: #222;
+  --scrollbar-thumb-hover: #009fdd;
+  --module-bg: #333;
+  --module-bg-hover: #444;
+  --empty-module-bg: #666;
+  --filled-module-bg: #00ff00;
+  --dragging-opacity: 0.8;
+}
+
 .module {
-    display: flex;
-    align-items: center;
-    /* Rest of the styling */
+  display: flex;
+  align-items: center;
+  background-color: var(--background-dark);
+  color: var(--text-color);
+  position: relative;
+  border: var(--module-border);
+  margin: 4px;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
   }
   
   .module-icon {
-    width: 30px;  /* Adjust as needed */
-    height: 30px; /* Adjust as needed */
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    margin-right: 10px;
+    border-radius: 5px;
     background-size: cover;
-    background-position: center;
   }
   
   .module-name {

@@ -6,7 +6,7 @@ const Module = ({ name, tier, icon }) => {
     <div className="module">
       <div
         className="module-icon"
-        style={{ backgroundImage: `url(/images/icons/${icon})` }} 
+        style={{ backgroundImage: `url(/shuttles/images/icons/${icon})` }} 
       />
       <div className="module-name">{name}</div>
       {/* Add more module details as needed */}
