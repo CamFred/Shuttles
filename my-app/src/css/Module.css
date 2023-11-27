@@ -5,9 +5,10 @@
   }
   
   .module-icon {
-    width: 30px;
-    height: 30px;
-    /* Rest of the styling */
+    width: 30px;  /* Adjust as needed */
+    height: 30px; /* Adjust as needed */
+    background-size: cover;
+    background-position: center;
   }
   
   .module-name {

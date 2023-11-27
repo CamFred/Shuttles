@@ -10,7 +10,6 @@ const ShipYardPage = () => {
       <div>
             <DraggableWindow name="Inventory">
                 <Inventory/>
-                test.
             </DraggableWindow>
             <DraggableWindow name="Ship Module Bays">Window 2 content here</DraggableWindow>
             <DraggableWindow name="Module Stats">Window 3<br />content<br />here</DraggableWindow>
