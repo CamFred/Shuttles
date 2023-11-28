@@ -5,7 +5,10 @@ const SystemOverview = ({ celestialId, onCelestialChange }) => {
   const celestialInfo = getCelestialInfo(celestialId);
 
   const handleWarpGateClick = (connectingGateId) => {
-    onCelestialChange(connectingGateId);
+    const connectingGateInfo = getCelestialInfo(connectingGateId);
+    if (connectingGateInfo) {
+      onCelestialChange(connectingGateId, connectingGateInfo.name); // Pass ID and name
+    }
   };
 
   return (

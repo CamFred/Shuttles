@@ -33,6 +33,21 @@ export function getStarSystem(celestialId) {
   return null;
 }
 
+export function getStarSystemById(starSystemId) {
+  // Loop through each star system in the galaxy data
+  for (const starSystem of galaxyData.starSystems) {
+    // Check if the star system contains a celestial destination with the given celestialId
+    if (starSystem.id === starSystemId) {
+      // If it does, return the star system
+      return starSystem;
+    }
+  }
+
+  // If no star system is found that contains a celestial destination with the given celestialId, return null
+  return null;
+}
+
+
 export function getIconUrl(celestialDestination) {
   const baseUrl = '/shuttles/images/icons/';
   switch (celestialDestination.type) {

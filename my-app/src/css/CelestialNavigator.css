@@ -1,11 +1,11 @@
 /* CelestialNavigator.css */
 .celestial-navigator {
     font-family: Arial, sans-serif;
-    padding: 20px;
+    padding: 0px;
 }
 
 .celestial-navigator h3 {
-    color: #333;
+    color: #9b9b9b;
     margin-bottom: 10px;
 }
 
@@ -15,9 +15,17 @@
 }
 
 .celestial-navigator ul li {
+    display: flex; /* Make the li a flex container */
+    align-items: center; /* Vertically center the text and icon */
+    width: 100%; /* Extend the li to the full width of the area */
     margin-bottom: 5px;
+    border-top: 1px solid #eee; /* Thin, subtle line above */
+    border-bottom: 1px solid #eee; /* Thin, subtle line below */
 }
 
+.celestial-navigator ul li img {
+    margin-right: 10px; /* Add some space between the icon and the text */
+}
 .celestial-navigator ul li a {
     color: #007bff;
     text-decoration: none;
