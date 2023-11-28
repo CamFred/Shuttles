@@ -1,5 +1,5 @@
-import React from 'react';
-import { getCelestialInfo } from '../../services/galaxyMap';
+import React from "react";
+import { getCelestialInfo } from "../../services/galaxyMap";
 
 const SystemOverview = ({ celestialId, onCelestialChange }) => {
   const celestialInfo = getCelestialInfo(celestialId);
@@ -23,15 +23,22 @@ const SystemOverview = ({ celestialId, onCelestialChange }) => {
             <div>
               <h3>Facilities</h3>
               <ul>
-                {celestialInfo.facilities.map((facility, index) => (
-                  facility === "warp gate" ? 
+                {celestialInfo.facilities.map((facility, index) =>
+                  facility === "warp gate" ? (
                     <li key={index}>
-                      <a href="#" onClick={() => handleWarpGateClick(celestialInfo.connectingGateId)}>
+                      <a
+                        href="#"
+                        onClick={() =>
+                          handleWarpGateClick(celestialInfo.connectingGateId)
+                        }
+                      >
                         {facility}
                       </a>
-                    </li> : 
+                    </li>
+                  ) : (
                     <li key={index}>{facility}</li>
-                ))}
+                  )
+                )}
               </ul>
             </div>
           )}

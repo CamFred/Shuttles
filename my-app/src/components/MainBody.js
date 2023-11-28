@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const MainBody = ({ children }) => {
-  return (
-    <main>
-      {children}
-    </main>
-  );
+  return <main>{children}</main>;
 };
 
 export default MainBody;
