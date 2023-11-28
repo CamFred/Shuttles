@@ -29,7 +29,6 @@ const NavigationPage = () => {
 
   return (
     <Layout>
-      <h2>Navigation</h2>
       <div>
         {renderDraggableWindow("Star Chart", <img src="/shuttles/images/placeholders/starchart.png" alt="Star Chart" height="300" width="300"/>)}
         {renderDraggableWindow("Local Scanner", <SystemOverview celestialId={celestialId} onCelestialChange={handleCelestialChange} />)}
