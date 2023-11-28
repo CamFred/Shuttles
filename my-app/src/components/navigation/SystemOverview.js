@@ -1,5 +1,5 @@
 import React from 'react';
-import { getCelestialInfo } from '../services/galaxyMap';
+import { getCelestialInfo } from '../../services/galaxyMap';
 
 const SystemOverview = ({ celestialId, onCelestialChange }) => {
   const celestialInfo = getCelestialInfo(celestialId);

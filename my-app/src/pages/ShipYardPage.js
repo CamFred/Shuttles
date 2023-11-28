@@ -9,12 +9,12 @@ const ShipYardPage = () => {
 
   return (
     <Layout>
-      {/* Content specific to the ShipYardPage */}
-      <h2>Shipyard</h2>
       <div>
+
             <DraggableWindow name="Shipyard">
                 <Inventory/>
             </DraggableWindow>
+      
             <DraggableWindow name="Ship Module Bays" userId={userId}>Window 2 content here</DraggableWindow>
             <DraggableWindow name="Module Stats" userId={userId}>Window 3<br />content<br />here</DraggableWindow>
         </div>

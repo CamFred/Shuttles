@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import '../css/CelestialNavigator.css';
-import { getIconUrl, getStarSystem, getStarSystemById } from '../services/galaxyMap';
+import '../../css/CelestialNavigator.css';
+import { getIconUrl, getStarSystem, getStarSystemById } from '../../services/galaxyMap';
 
 const CelestialNavigator = ({ celestialId, onCelestialChange }) => {
   const [starSystem, setStarSystem] = useState(null);

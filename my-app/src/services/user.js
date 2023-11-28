@@ -21,9 +21,7 @@ export function getCelestialId() {
     const celestialId = localStorage.getItem('celestialId');
 
     // If there's no celestialId in local storage, return a default ID
-    //console.log(celestialId);
     return celestialId || 'spaceStation001';
-
     // Later, replace the above line with code to fetch the user ID from the database
 }
 
