@@ -1,9 +1,9 @@
 import React from "react";
 import Layout from "../components/Layout";
 import DraggableWindow from "../components/DraggableWindow";
-import { getUserId } from "../services/user";
+import UserService from '../services/UserService';
 const HomePage = () => {
-  const userId = getUserId();
+  const userId = UserService.getUserId();
 
   return (
     <Layout>

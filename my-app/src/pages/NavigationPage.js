@@ -5,11 +5,11 @@ import SystemOverview from "../components/navigation/SystemOverview";
 import Viewport from "../components/Viewport";
 import CelestialNavigator from "../components/navigation/CelestialNavigator";
 import NavigationControls from "../components/navigation/NavigationControls";
-import { getUserId, getCelestialId, setCelestialId } from "../services/user";
+import UserService from '../services/UserService';
 
 const NavigationPage = () => {
-  const userId = getUserId();
-  const [celestialId, setLocalCelestialId] = useState(getCelestialId());
+  const userId = UserService.getUserId();
+  const [celestialId, setLocalCelestialId] = useState(UserService.getCelestialId());
   const [destination, setDestination] = useState({ id: "", name: "" });
 
   const handleCelestialChange = (id, name) => {
@@ -17,7 +17,7 @@ const NavigationPage = () => {
   };
 
   const handleEngage = (destinationId) => {
-    setCelestialId(destinationId);
+    UserService.setCelestialId(destinationId);
     setLocalCelestialId(destinationId);
   };
 
