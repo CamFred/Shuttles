@@ -4,6 +4,7 @@ import DraggableWindow from '../components/DraggableWindow';
 import SystemOverview from '../components/SystemOverview';  
 import CelestialNavigator from '../components/CelestialNavigator';
 import { getUserId, getCelestialId, setCelestialId } from '../services/user';
+import Viewport from '../components/Viewport';
 
 const NavigationPage = () => {
   const userId = getUserId();
@@ -33,7 +34,7 @@ const NavigationPage = () => {
                 onCelestialChange={handleCelestialChange}/>
             </DraggableWindow>
             <DraggableWindow name="Viewport" userId={userId}>
-               <img src="/shuttles/images/placeholders/viewport.png" alt="Viewport" height = "300" width ="300"/>
+               <Viewport celestialId={celestialId} />
            </DraggableWindow> 
 
         </div>
