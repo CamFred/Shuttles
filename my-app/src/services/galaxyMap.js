@@ -32,3 +32,21 @@ export function getStarSystem(celestialId) {
   // If no star system is found that contains a celestial destination with the given celestialId, return null
   return null;
 }
+
+export function getIconUrl(celestialDestination) {
+  const baseUrl = '/shuttles/images/icons/';
+  switch (celestialDestination.type) {
+      case 'planet':
+          return baseUrl + 'world.png';
+      case 'space station':
+        return baseUrl + 'defense-satellite.png';
+      case 'warp gate':
+        return baseUrl + 'star-gate.png';
+      case 'asteroid belt':
+        return baseUrl + 'ringed-planet.png';
+      case 'comet':
+        return baseUrl + 'fragmented-meteor.png';
+          default:
+            return baseUrl + 'uncertainty.png';
+  }
+}

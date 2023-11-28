@@ -1,0 +1,28 @@
+/* CelestialNavigator.css */
+.celestial-navigator {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.celestial-navigator h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.celestial-navigator ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.celestial-navigator ul li {
+    margin-bottom: 5px;
+}
+
+.celestial-navigator ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.celestial-navigator ul li a:hover {
+    text-decoration: underline;
+}

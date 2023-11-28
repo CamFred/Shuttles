@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-
+import '../css/CelestialNavigator.css'; // Import the CSS
+import { getIconUrl } from '../services/galaxyMap'; // Import the galaxy map data
 import { getStarSystem } from '../services/galaxyMap';
 
 const CelestialNavigator = ({ celestialId, onCelestialChange }) => {
@@ -35,27 +36,28 @@ const CelestialNavigator = ({ celestialId, onCelestialChange }) => {
   }
 
   return (
-<div>
-  <h3>Celestial Destinations in {starSystem.name}</h3>
-  <ul>
-    {starSystem.celestialDestinations.map((destination) => (
-      <li key={destination.id}>
-        <a href="#" onClick={(e) => {e.preventDefault(); handleItemClick(destination.id);}}>
-          {destination.name}
-        </a>
-      </li>
-    ))}
-  </ul>
+    <div className="celestial-navigator">
+        <h3>Celestial Destinations in {starSystem.name}</h3>
+        <ul>
+            {starSystem.celestialDestinations.map((destination) => (
+                <li key={destination.id}>
+                    <a href="#" onClick={(e) => {e.preventDefault(); handleItemClick(destination.id);}}>
+                        <img src={getIconUrl(destination)} alt={destination.type} height='30' width='30'/>
+                        {destination.name}
+                    </a>
+                </li>
+            ))}
+        </ul>
 
-  <h3>Nearest Stars to {starSystem.name}</h3>
-  <ul>
-    {starSystem.nearestStars.map((star) => (
-      <li key={star.id}>
-        {star.id} - {star.distance} AU
-      </li>
-    ))}
-  </ul>
-</div>
-  );
+        <h3>Nearest Stars to {starSystem.name}</h3>
+        <ul>
+            {starSystem.nearestStars.map((star) => (
+                <li key={star.id}>
+                    {star.id} - {star.distance} AU
+                </li>
+            ))}
+        </ul>
+    </div>
+);
 }
 export default CelestialNavigator;
