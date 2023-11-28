@@ -15,3 +15,19 @@ export function getUserId() {
 
     // Later, replace the above line with code to fetch the user ID from the database
 }
+
+export function getCelestialId() {
+    // Get the celestialId from local storage
+    const celestialId = localStorage.getItem('celestialId');
+
+    // If there's no celestialId in local storage, return a default ID
+    //console.log(celestialId);
+    return celestialId || 'spaceStation001';
+
+    // Later, replace the above line with code to fetch the user ID from the database
+}
+
+export function setCelestialId(celestialId) {
+    // Store the specified celestialId in local storage
+    localStorage.setItem('celestialId', celestialId);
+}

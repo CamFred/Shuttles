@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import DraggableWindow from '../components/DraggableWindow';
-import { getUserId } from '../services/userId';
+import { getUserId } from '../services/user';
 const HomePage = () => {
 
   const userId = getUserId();

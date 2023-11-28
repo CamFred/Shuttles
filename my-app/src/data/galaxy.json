@@ -1,90 +1,143 @@
 {
-    "starSystems": [
-      {
-        "id": "system001",
-        "name": "Nebulon Prime",
-        "coordinates": {"x": 105000, "y": 88000, "z": 45000},
-        "nearestStars": [
-          {"id": "system002", "distance": 85},
-          {"id": "system003", "distance": 130}
-        ],
-        "celestialDestinations": [
-          {
-            "id": "planet001",
-            "type": "planet",
-            "name": "Zephyria",
-            "description": "A planet with vast oceans and floating cities.",
-            "resources": ["hydronium", "exotic fish"],
-            "dangers": ["intense storms", "pirates"],
-            "facilities": ["aquatic research station", "trade harbor"]
-          },
-          {
-            "id": "asteroidBelt001",
-            "type": "asteroid belt",
-            "name": "Rogue's Veil",
-            "description": "A dense asteroid belt rich in rare minerals.",
-            "resources": ["asteroid ore", "quantum crystals"],
-            "dangers": ["rogue asteroids", "smugglers"],
-            "facilities": ["mining outpost", "secret base"]
-          }
-        ]
-      },
-      {
-        "id": "system002",
-        "name": "Vortexia",
-        "coordinates": {"x": 98000, "y": 104000, "z": 51000},
-        "nearestStars": [
-          {"id": "system001", "distance": 85},
-          {"id": "system003", "distance": 95}
-        ],
-        "celestialDestinations": [
-          {
-            "id": "planet002",
-            "type": "planet",
-            "name": "Shadowmere",
-            "description": "A dark, enigmatic planet with a permanent twilight.",
-            "resources": ["dark matter", "mysterious artifacts"],
-            "dangers": ["unknown"],
-            "facilities": ["abandoned outpost", "ancient ruins"]
-          },
-          {
-            "id": "spaceStation001",
-            "type": "space station",
-            "name": "Vortexia Haven",
-            "description": "A bustling interstellar trade hub at the edge of the vortex.",
-            "services": ["trade market", "ship repair", "information broker"]
-          }
-        ]
-      },
-      {
-        "id": "system003",
-        "name": "Solara",
-        "coordinates": {"x": 111000, "y": 97000, "z": 46000},
-        "nearestStars": [
-          {"id": "system001", "distance": 130},
-          {"id": "system002", "distance": 95}
-        ],
-        "celestialDestinations": [
-          {
-            "id": "planet003",
-            "type": "planet",
-            "name": "Luminara",
-            "description": "A bright, sun-kissed planet with golden sands and clear skies.",
-            "resources": ["solar energy", "precious metals"],
-            "dangers": ["solar flares", "high radiation"],
-            "facilities": ["solar farm", "observatory"]
-          },
-          {
-            "id": "comet001",
-            "type": "comet",
-            "name": "Starwhisper",
-            "description": "A comet emitting a mysterious, luminous aura.",
-            "resources": ["frozen gases", "cosmic dust"],
-            "dangers": ["unstable trajectory", "cold hazards"],
-            "facilities": ["research station"]
-          }
-        ]
-      }
-    ]
-  }
-  
+  "starSystems": [
+    {
+      "id": "system001",
+      "name": "Nebulon Prime",
+      "type": "Binary Star System",
+      "description": "A vibrant star system with twin suns, known for its rich mineral planets and advanced spacefaring civilizations.",
+      "coordinates": {"x": 105000, "y": 88000, "z": 45000},
+      "nearestStars": [
+        {"id": "system002", "distance": 85},
+        {"id": "system003", "distance": 130}
+      ],
+      "celestialDestinations": [
+        {
+          "id": "planet001",
+          "type": "planet",
+          "name": "Zephyria",
+          "description": "A planet with vast oceans and floating cities.",
+          "resources": ["hydronium", "exotic fish"],
+          "dangers": ["intense storms", "pirates"],
+          "facilities": ["aquatic research station", "trade harbor"]
+        },
+        {
+          "id": "asteroidBelt001",
+          "type": "asteroid belt",
+          "name": "Rogue's Veil",
+          "description": "A dense asteroid belt rich in rare minerals.",
+          "resources": ["asteroid ore", "quantum crystals"],
+          "dangers": ["rogue asteroids", "smugglers"],
+          "facilities": ["mining outpost", "secret base"]
+        },
+        {
+          "id": "warpGate001a",
+          "type": "warp gate",
+          "name": "Warp Gate to Vortexia",
+          "description": "A warp gate that connects Nebulon Prime to Vortexia.",
+          "connectingGateId": "warpGate002a",
+          "facilities": ["warp gate"]
+        },
+        {
+          "id": "warpGate001b",
+          "type": "warp gate",
+          "name": "Warp Gate to Solara",
+          "description": "A warp gate that connects Nebulon Prime to Solara.",
+          "connectingGateId": "warpGate003a",
+          "facilities": ["warp gate"]
+        }
+      ]
+    },
+    {
+      "id": "system002",
+      "name": "Vortexia",
+      "type": "Spiral Galaxy Outskirts",
+      "description": "A mysterious system on the edge of a spiral galaxy, home to enigmatic phenomena and ancient secrets.",
+      "coordinates": {"x": 98000, "y": 104000, "z": 51000},
+      "nearestStars": [
+        {"id": "system001", "distance": 85},
+        {"id": "system003", "distance": 95}
+      ],
+      "celestialDestinations": [
+        {
+          "id": "planet002",
+          "type": "planet",
+          "name": "Shadowmere",
+          "description": "A dark, enigmatic planet with a permanent twilight.",
+          "resources": ["dark matter", "mysterious artifacts"],
+          "dangers": ["unknown"],
+          "facilities": ["abandoned outpost", "ancient ruins"]
+        },
+        {
+          "id": "spaceStation001",
+          "type": "space station",
+          "name": "Vortexia Haven",
+          "description": "A bustling interstellar trade hub at the edge of the vortex.",
+          "services": ["trade market", "ship repair", "information broker"]
+        },
+        {
+          "id": "warpGate002a",
+          "type": "warp gate",
+          "name": "Warp Gate to Nebulon Prime",
+          "description": "A warp gate that connects Vortexia to Nebulon Prime.",
+          "connectingGateId": "warpGate001a",
+          "facilities": ["warp gate"]
+        },
+        {
+          "id": "warpGate002b",
+          "type": "warp gate",
+          "name": "Warp Gate to Solara",
+          "description": "A warp gate that connects Vortexia to Solara.",
+          "connectingGateId": "warpGate003b",
+          "facilities": ["warp gate"]
+        }
+      ]
+    },
+    {
+      "id": "system003",
+      "name": "Solara",
+      "type": "Dwarf Star System",
+      "description": "A system orbiting a small, yet surprisingly active dwarf star, renowned for its unique solar phenomena.",
+      "coordinates": {"x": 111000, "y": 97000, "z": 46000},
+      "nearestStars": [
+        {"id": "system001", "distance": 130},
+        {"id": "system002", "distance": 95}
+      ],
+      "celestialDestinations": [
+        {
+          "id": "planet003",
+          "type": "planet",
+          "name": "Luminara",
+          "description": "A bright, sun-kissed planet with golden sands and clear skies.",
+          "resources": ["solar energy", "precious metals"],
+          "dangers": ["solar flares", "high radiation"],
+          "facilities": ["solar farm", "observatory"]
+        },
+        {
+          "id": "comet001",
+          "type": "comet",
+          "name": "Starwhisper",
+          "description": "A comet emitting a mysterious, luminous aura.",
+          "resources": ["frozen gases", "cosmic dust"],
+          "dangers": ["unstable trajectory", "cold hazards"],
+          "facilities": ["research station"]
+        },
+        {
+          "id": "warpGate003a",
+          "type": "warp gate",
+          "name": "Warp Gate to Nebulon Prime",
+          "description": "A warp gate that connects Solara to Nebulon Prime.",
+          "connectingGateId": "warpGate001b",
+          "facilities": ["warp gate"]
+        },
+        {
+          "id": "warpGate003b",
+          "type": "warp gate",
+          "name": "Warp Gate to Vortexia",
+          "description": "A warp gate that connects Solara to Vortexia.",
+          "connectingGateId": "warpGate002b",
+          "facilities": ["warp gate"]
+        }
+      ]
+    }
+  ]
+}

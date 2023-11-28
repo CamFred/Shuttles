@@ -11,7 +11,6 @@ const Footer = () => {
          <Link to="/contact" className="link">Contact</Link>
       </nav>
       {/* Footer content goes here */}
-      <p>© 2023 My Website</p>
     </footer>
   );
 };

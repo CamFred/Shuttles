@@ -13,14 +13,11 @@
     padding: 0px;
     border-radius: 0px;
     max-height: 500px;
-    overflow: auto;
-    scrollbar-width: thin;
-    scrollbar-color: #00bfff transparent;
 }
 
 .draggable-window-content {
     width: 320px;
-    max-height: 200px;
+    max-height: 320px;
     overflow: auto;
     scrollbar-width: thin;
     scrollbar-color: #00bfff transparent;

@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import DraggableWindow from '../components/DraggableWindow';
 import Inventory from '../components/Inventory';
-import { getUserId } from '../services/userId';
+import { getUserId } from '../services/user';
 
 const ShipYardPage = () => {
   const userId = getUserId();
