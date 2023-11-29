@@ -7,6 +7,7 @@ import CelestialNavigator from "../components/navigation/CelestialNavigator";
 import NavigationControls from "../components/navigation/NavigationControls";
 import UserService from "../services/UserService";
 import MockServer from "../mock/MockServer";
+import StarChart from "../components/navigation/StarChart";
 
 const NavigationPage = () => {
   const userId = UserService.getUserId();
@@ -57,15 +58,6 @@ const NavigationPage = () => {
     <Layout>
       <div>
         {renderDraggableWindow(
-          "Star Chart",
-          <img
-            src="/shuttles/images/placeholders/starchart.png"
-            alt="Star Chart"
-            height="300"
-            width="300"
-          />
-        )}
-        {renderDraggableWindow(
           "Local Scanner",
           <SystemOverview
             celestialId={celestialId}
@@ -93,6 +85,12 @@ const NavigationPage = () => {
           "Viewport",
           <Viewport 
           isTraveling={travelStatus === "travelling"}
+          celestialId={celestialId} 
+          />
+        )}
+          {renderDraggableWindow(
+          "Star Chart",
+          <StarChart 
           celestialId={celestialId} 
           />
         )}

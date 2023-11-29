@@ -44,6 +44,14 @@
           "description": "A warp gate that connects Nebulon Prime to Solara.",
           "connectingGateId": "warpGate003a",
           "facilities": ["warp gate"]
+        },
+        {
+          "id": "warpGate001c",
+          "type": "warp gate",
+          "name": "Warp Gate to Ignis",
+          "description": "A warp gate that connects Nebulon Prime to Ignis.",
+          "connectingGateId": "warpGate006b",
+          "facilities": ["warp gate"]
         }
       ]
     },
@@ -88,6 +96,14 @@
           "name": "Warp Gate to Solara",
           "description": "A warp gate that connects Vortexia to Solara.",
           "connectingGateId": "warpGate003b",
+          "facilities": ["warp gate"]
+        },
+        {
+          "id": "warpGate002c",
+          "type": "warp gate",
+          "name": "Warp Gate to Crysalix",
+          "description": "A warp gate that connects Vortexia to Crysalix.",
+          "connectingGateId": "warpGate004a",
           "facilities": ["warp gate"]
         }
       ]
@@ -135,6 +151,147 @@
           "name": "Warp Gate to Vortexia",
           "description": "A warp gate that connects Solara to Vortexia.",
           "connectingGateId": "warpGate002b",
+          "facilities": ["warp gate"]
+        }
+      ]
+    },
+    {
+      "id": "system004",
+      "name": "Crysalix",
+      "type": "Ice Giant System",
+      "description": "A cold and remote system dominated by a giant ice planet and its moons, known for its breathtaking ice formations.",
+      "coordinates": {"x": 102000, "y": 101000, "z": 48000},
+      "nearestStars": [
+        {"id": "system002", "distance": 75},
+        {"id": "system005", "distance": 90}
+      ],
+      "celestialDestinations": [
+        {
+          "id": "planet004",
+          "type": "planet",
+          "name": "Frostridge",
+          "description": "A frozen world with towering ice cliffs and deep blue crevasses.",
+          "resources": ["ice crystals", "rare gases"],
+          "dangers": ["extreme cold", "blizzards"],
+          "facilities": ["research lab", "ice mining station"]
+        },
+        {
+          "id": "moon001",
+          "type": "moon",
+          "name": "Glacium",
+          "description": "A small, icy moon with a network of subsurface oceans.",
+          "resources": ["subglacial water", "bio-samples"],
+          "dangers": ["ice quakes", "subsurface predators"],
+          "facilities": ["submarine base", "oceanographic station"]
+        },
+        {
+          "id": "warpGate004a",
+          "type": "warp gate",
+          "name": "Warp Gate to Vortexia",
+          "description": "A warp gate that connects Crysalix to Vortexia.",
+          "connectingGateId": "warpGate002c",
+          "facilities": ["warp gate"]
+        },
+        {
+          "id": "warpGate004b",
+          "type": "warp gate",
+          "name": "Warp Gate to Serenus",
+          "description": "A warp gate that connects Crysalix to Serenus.",
+          "connectingGateId": "warpGate005a",
+          "facilities": ["warp gate"]
+        }
+      ]
+    },
+    {
+      "id": "system005",
+      "name": "Serenus",
+      "type": "Garden World System",
+      "description": "A lush, verdant system with a rich diversity of life, home to the famous Serenus Gardens.",
+      "coordinates": {"x": 108000, "y": 105000, "z": 50000},
+      "nearestStars": [
+        {"id": "system004", "distance": 90},
+        {"id": "system006", "distance": 110}
+      ],
+      "celestialDestinations": [
+        {
+          "id": "planet005",
+          "type": "planet",
+          "name": "Verdantia",
+          "description": "An idyllic paradise planet with sprawling jungles and serene lakes.",
+          "resources": ["exotic flora", "medicinal herbs"],
+          "dangers": ["aggressive wildlife", "dense foliage"],
+          "facilities": ["ecological preserve", "botanical research"]
+        },
+        {
+          "id": "moon002",
+          "type": "moon",
+          "name": "Pax",
+          "description": "A peaceful moon with rolling hills and quiet valleys, a retreat for weary travelers.",
+          "resources": ["fresh water", "natural beauty"],
+          "dangers": ["none"],
+          "facilities": ["resort", "spa"]
+        },
+        {
+          "id": "warpGate005a",
+          "type": "warp gate",
+          "name": "Warp Gate to Crysalix",
+          "description": "A warp gate that connects Serenus to Crysalix.",
+          "connectingGateId": "warpGate004b",
+          "facilities": ["warp gate"]
+        },
+        {
+          "id": "warpGate005b",
+          "type": "warp gate",
+          "name": "Warp Gate to Ignis",
+          "description": "A warp gate that connects Serenus to Ignis.",
+          "connectingGateId": "warpGate006a",
+          "facilities": ["warp gate"]
+        }
+      ]
+    },
+    {
+      "id": "system006",
+      "name": "Ignis",
+      "type": "Volcanic Star System",
+      "description": "A volatile system with a young, active star and several volcanic planets, rich in minerals but dangerous.",
+      "coordinates": {"x": 117000, "y": 99000, "z": 52000},
+      "nearestStars": [
+        {"id": "system005", "distance": 110},
+        {"id": "system001", "distance": 140}
+      ],
+      "celestialDestinations": [
+        {
+          "id": "planet006",
+          "type": "planet",
+          "name": "Pyroclast",
+          "description": "A world of molten lava seas and ever-erupting volcanoes.",
+          "resources": ["molten metals", "geothermal energy"],
+          "dangers": ["lava flows", "toxic gases"],
+          "facilities": ["geothermal plant", "observatory"]
+        },
+        {
+          "id": "asteroidBelt002",
+          "type": "asteroid belt",
+          "name": "Molten Ring",
+          "description": "A dense asteroid belt heated by the nearby star, rich in valuable ores.",
+          "resources": ["metallic ore", "thermal energy"],
+          "dangers": ["high temperatures", "solar flares"],
+          "facilities": ["smelting station", "solar array"]
+        },
+        {
+          "id": "warpGate006a",
+          "type": "warp gate",
+          "name": "Warp Gate to Serenus",
+          "description": "A warp gate that connects Ignis to Serenus.",
+          "connectingGateId": "warpGate005b",
+          "facilities": ["warp gate"]
+        },
+        {
+          "id": "warpGate006b",
+          "type": "warp gate",
+          "name": "Warp Gate to Nebulon Prime",
+          "description": "A warp gate that connects Ignis to Nebulon Prime.",
+          "connectingGateId": "warpGate001c",
           "facilities": ["warp gate"]
         }
       ]

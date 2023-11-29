@@ -56,6 +56,8 @@ export function getIconUrl(celestialDestination) {
   switch (celestialDestination.type) {
     case "planet":
       return baseUrl + "world.png";
+    case "moon":
+      return baseUrl + "world.png";
     case "space station":
       return baseUrl + "defense-satellite.png";
     case "warp gate":

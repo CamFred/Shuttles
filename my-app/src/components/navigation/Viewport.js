@@ -27,6 +27,9 @@ const Viewport = ({ celestialId, isTraveling }) => {
           case "asteroid belt":
             setBaseImageUrl("/shuttles/images/viewports/asteroidbelt.png");
             break;
+          case "moon":
+            setBaseImageUrl("/shuttles/images/viewports/moon2.png");
+            break;
           default:
             setBaseImageUrl("/shuttles/images/viewports/stars.png");
         }
