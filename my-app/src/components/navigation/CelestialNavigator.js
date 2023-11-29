@@ -4,19 +4,51 @@ import {
   getIconUrl,
   getStarSystem,
   getStarSystemById,
+  getCelestialInfo,
 } from "../../services/galaxyMap";
 
-const CelestialNavigator = ({ celestialId, onCelestialChange }) => {
+const CelestialNavigator = ({
+  celestialId,
+  destination,
+  isTraveling,
+  onCelestialChange,
+}) => {
   const [starSystem, setStarSystem] = useState(null);
+  const [currentCelestialName, setCurrentCelestialName] = useState('');
+
+
+  // useEffect(() => {
+  //   const system = getStarSystem(celestialId);
+  //   setStarSystem(system);
+  // }, [celestialId]);
 
   useEffect(() => {
     const system = getStarSystem(celestialId);
     setStarSystem(system);
+
+    const celestialInfo = getCelestialInfo(celestialId);
+    if (celestialInfo) {
+      setCurrentCelestialName(celestialInfo.name);
+    } else {
+      setCurrentCelestialName('');
+    }
   }, [celestialId]);
 
   const handleItemClick = (id, name) => {
     onCelestialChange(id, name); // Pass both ID and name
   };
+
+  if (isTraveling) {
+    // Display warping message when traveling
+    return (
+      <div className="celestial-navigator">
+        <h3>Warping</h3>
+        <p>
+          Warping from {currentCelestialName} to {destination.name}.
+        </p>
+      </div>
+    );
+  }
 
   if (!starSystem) {
     return <p>Star system not found.</p>;

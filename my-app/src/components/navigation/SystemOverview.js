@@ -1,7 +1,7 @@
 import React from "react";
 import { getCelestialInfo } from "../../services/galaxyMap";
 
-const SystemOverview = ({ celestialId, onCelestialChange }) => {
+const SystemOverview = ({ celestialId, onCelestialChange, isTraveling }) => {
   const celestialInfo = getCelestialInfo(celestialId);
 
   const handleWarpGateClick = (connectingGateId) => {
@@ -10,6 +10,11 @@ const SystemOverview = ({ celestialId, onCelestialChange }) => {
       onCelestialChange(connectingGateId, connectingGateInfo.name); // Pass ID and name
     }
   };
+
+  // Conditional rendering based on travel status
+  if (isTraveling) {
+    return <div className="system-overview-offline">OFFLINE IN WARP</div>;
+  }
 
   return (
     <div>
