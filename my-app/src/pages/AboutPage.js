@@ -2,12 +2,14 @@ import React from "react";
 import Layout from "../components/Layout";
 import DraggableWindow from "../components/DraggableWindow";
 import UserService from '../services/UserService';
+import { Button } from 'react-bootstrap';
 const HomePage = () => {
   const userId = UserService.getUserId();
 
   return (
     <Layout>
       {/* Content specific to the about page */}
+      <Button variant="primary">Click me</Button>
       <h2>Welcome to the About Page</h2>
       <p>This is the main content of the About Page.</p>
       <div>
@@ -125,8 +127,11 @@ const HomePage = () => {
             <li>
               <a href="https://golden-layout.com/tutorials/dynamically-adding-components.html">
                 Golden-Layout
-              </a>{" "}
+              </a>
               - Nice alternative for the windowing.
+            </li>
+            <li>
+            <a href="https://react-bootstrap.github.io/docs/components/accordion/">React Bootstrap</a>
             </li>
           </ol>
         </DraggableWindow>
