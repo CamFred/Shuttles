@@ -8,6 +8,12 @@ import NavigationControls from "../components/navigation/NavigationControls";
 import UserService from "../services/UserService";
 import MockServer from "../mock/MockServer";
 import StarChart from "../components/navigation/StarChart";
+import Tab from "react-bootstrap/Tab";
+import Tabs from "react-bootstrap/Tabs";
+import Card from "react-bootstrap/Card";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 const NavigationPage = () => {
   const userId = UserService.getUserId();
@@ -57,43 +63,39 @@ const NavigationPage = () => {
   return (
     <Layout>
       <div>
-        {renderDraggableWindow(
-          "Local Scanner",
-          <SystemOverview
-            celestialId={celestialId}
-            onCelestialChange={handleCelestialChange}
-            isTraveling={travelStatus === "travelling"}
-          />
-        )}
-        {renderDraggableWindow(
-          "Navigation",
-          <>
+        <Container>
+          <Row>
+            <Col>
+                  <CelestialNavigator
+                    celestialId={celestialId}
+                    destination={destination}
+                    isTraveling={travelStatus === "travelling"}
+                    onCelestialChange={handleCelestialChange}
+                  />
+
+
+            </Col>
+            <Col cs={6}>
+              <Viewport
+                isTraveling={travelStatus === "travelling"}
+                celestialId={celestialId}
+              />
+              <StarChart celestialId={celestialId} />
+            </Col>
+            <Col>
+            <SystemOverview
+                    celestialId={celestialId}
+                    onCelestialChange={handleCelestialChange}
+                    isTraveling={travelStatus === "travelling"}
+                  />
             <NavigationControls
-              destination={destination}
-              setDestination={setDestination}
-              onEngage={handleEngage}
-            />
-            <CelestialNavigator
-              celestialId={celestialId}
-              destination={destination}
-              isTraveling={travelStatus === "travelling"}
-              onCelestialChange={handleCelestialChange}
-            />
-          </>
-        )}
-        {renderDraggableWindow(
-          "Viewport",
-          <Viewport 
-          isTraveling={travelStatus === "travelling"}
-          celestialId={celestialId} 
-          />
-        )}
-          {renderDraggableWindow(
-          "Star Chart",
-          <StarChart 
-          celestialId={celestialId} 
-          />
-        )}
+                destination={destination}
+                setDestination={setDestination}
+                onEngage={handleEngage}
+              />
+            </Col>
+          </Row>
+        </Container>
       </div>
     </Layout>
   );

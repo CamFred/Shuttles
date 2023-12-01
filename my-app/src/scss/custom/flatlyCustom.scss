@@ -1,0 +1,22 @@
+// 1. Import Flatly's variable overrides
+@import '../flatly/variables';
+
+// 2. Optionally define your custom variables
+//    These will override Flatly's variables and Bootstrap's default variables.
+//$primary-color: #your-choice-color;
+//$font-family-base: 'Your Choice Font', sans-serif;
+// Add more custom variables as needed...
+
+// 3. Import Bootstrap's source SCSS
+//    This should come after your variable definitions to apply them.
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// 4. Import Flatly's additional customizations
+@import '../flatly/bootswatch';
+
+// 5. Add your custom styles
+//    This is where you put styles that are specific to your project.
+body {
+    background-color: $black;
+}
+// Continue with your custom styles...

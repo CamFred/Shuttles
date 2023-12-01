@@ -1,57 +1,28 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import NavLink from "react-bootstrap/NavLink";
+import { useLocation } from "react-router-dom";
 
 const Header = () => {
+  const location = useLocation();
   return (
-    <header className="header">
-      <Navbar expand="lg" className="bg-body-tertiary">
+    <header className="bg-primary">
+      <Navbar expand="lg" className="navbar-dark">
         <Container>
-          <Navbar.Brand href="#home">Cosmia</Navbar.Brand>
+          <Navbar.Brand className="" href="#home">Cosmia</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/About">About</Nav.Link>
-              <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown>
+            <NavLink href="/navigation" active={location.pathname === '/navigation'}>Navigation</NavLink>
+            <NavLink href="/engineering" active={location.pathname === '/engineering'}>Engineering</NavLink>
+            <NavLink eventKey="disabled" disabled>Coms</NavLink>
+            <NavLink eventKey="disabled" disabled>Cargo</NavLink>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
-      <Nav variant="tabs" defaultActiveKey="/home">
-        <Nav.Item>
-          <Nav.Link href="/navigation">Navigation</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="/engineering">Engineering</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey="disabled" disabled>
-            Coms
-          </Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey="disabled" disabled>
-            Cargo
-          </Nav.Link>
-        </Nav.Item>
-      </Nav>
     </header>
   );
 };

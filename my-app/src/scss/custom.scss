@@ -1,0 +1,13 @@
+// 1. Your variable overrides come first
+$body-bg: #000;
+
+// 2. Then, import Bootstrap’s functions, variables, and mixins
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+// 3. Then, import Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// 4. And finally, include your custom styles
+// Custom styles here

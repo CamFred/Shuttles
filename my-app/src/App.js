@@ -7,8 +7,9 @@ import NavigationPage from "./pages/NavigationPage";
 import EngineeringPage from "./pages/EngineeringPage";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+//import './scss/custom.scss';
+//import './scss/flatly/bootstrap.min.css';
+import './scss/custom/flatlyCustom.scss';
 const App = () => {
   return (
     <Router>

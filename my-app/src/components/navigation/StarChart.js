@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import galaxyData from '../../data/galaxy.json'; // Import the JSON data
 
-const SVG_SIZE = 500; // Size of the SVG viewport
+const SVG_SIZE = 300; // Size of the SVG viewport
 const MIN_X = 90000; // Minimum X coordinate from your JSON
 const MAX_X = 120000; // Maximum X coordinate from your JSON
 const MIN_Y = 80000; // Minimum Y coordinate from your JSON

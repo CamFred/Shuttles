@@ -1,13 +1,18 @@
 import React from "react";
-
+import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 const NavigationControls = ({ destination, setDestination, onEngage }) => {
   const handleEngage = () => {
     onEngage(destination.id); // Engage using the ID
   };
 
   return (
-    <div className="navigation-controls">
+    <Container>
+      <row>
       <input
+        class="form-control-sm"
         type="text"
         placeholder="Enter destination"
         value={destination.name} // Display the name
@@ -16,10 +21,11 @@ const NavigationControls = ({ destination, setDestination, onEngage }) => {
         }
         readOnly // Make it read-only if the input shouldn't be editable
       />
-      <button onClick={handleEngage} disabled={!destination.id}>
+      <Button variant="primary" onClick={handleEngage} disabled={!destination.id}>
         Engage
-      </button>
-    </div>
+      </Button>
+      </row>
+    </Container>
   );
 };
 
